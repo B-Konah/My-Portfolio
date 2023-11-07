@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2b53387234.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav id="topNav">
+          <img src="img/logo2.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Boimah</span><br />Konah from Liberia</h1>
+          <div class="btn-box">
+            <a href="#">Hire Me</a>
+            <a href="#">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------about----------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/background-pic_624x811.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a full stack developer and software engineer with great
+              knowledge in HTML, CSS, and JavaScript. In addition to my
+              technical knowledge, I have experience as a student leader,
+              organizing and supervising programs for students from my home
+              country at my university. As a department assistant at my
+              university, I have added to the body of knowledge in the field of
+              software engineering. My love of business inspired me to get a
+              diploma in accounting, demonstrating my spirit of entrepreneurship
+              and desire to comprehend the financial side of managing a
+              successful business.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End</span
+                  ><br />HTML/CSS/JAVASCRIPT/REACT/BOOTSTRAP
+                </li>
+                <li><span>Back-End</span><br />NODEJS/PHP/PYTHON</li>
+                <li><span>Database</span><br />MYSQL/POSTGRES/MONGO</li>
+                <li><span>Devops</span><br />AWS/AZURE/ANSIBLE/DOCKER</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Present</span><br />INTERN Implemented product
+                  features through HTML, CSS AND JAVASCRIPT
+                </li>
+                <li>
+                  <span>2021 - 2022</span><br />Assistant in the Software
+                  engineering department at Rauf Denktas University
+                </li>
+                <li>
+                  <span>2021 - 2023</span><br />Student Coordinator for Liberian
+                  Students at Rauf Denktas University
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - 2024</span><br />Bachelor in Software Engineering
+                  at Rauf Denktas University
+                </li>
+                <li>
+                  <span>2015 - 2018</span><br />Diploma in Accounting at the
+                  Booker Washington Institute
+                </li>
+                <li>
+                  <span>February 11, 2023</span><br />Certificate of completion
+                  JavaScript full Stack.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------Services---------------------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              explicabo dicta dolorum modi obcaecati. Sit beatae totam nam
+              reprehenderit? Esse cumque ullam numquam modi consectetur, totam
+              consequuntur delectus corporis dolorem.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              explicabo dicta dolorum modi obcaecati. Sit beatae totam nam
+              reprehenderit? Esse cumque ullam numquam modi consectetur, totam
+              consequuntur delectus corporis dolorem.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              explicabo dicta dolorum modi obcaecati. Sit beatae totam nam
+              reprehenderit? Esse cumque ullam numquam modi consectetur, totam
+              consequuntur delectus corporis dolorem.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------Portfolio---------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work4.jpg" />
+            <div class="layer">
+              <h3>Web App</h3>
+              <p>
+                Create and share captivating content with our user-friendly web
+                app. Craft engaging posts with ease, whether you're a blogger,
+                social media enthusiast, or content creator.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="img/work5.jpg" />
+            <div class="layer">
+              <h3>The Bojelene Restaurant App</h3>
+              <p>
+                The utimate dining companion in the digital age.Bojelene is a
+                cutting-edge Restaurant app designed to revolutionize your
+                culinary experiences. Discover a world of exquisite flavors,
+                enticing menus, and personalized recommendation at your
+                fingertips.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="img/work6.jpg" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                Your trusted weather companion in the palm of your hand. Stay
+                one step ahead with weatheNow, the utimate weather app that
+                provides accurate forecasts, real-time updates, and essential
+                weather information at your fingertips.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!--------------------------Contact------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>boimah600@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+905338751186</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="img/Boimah CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          CopyRight Made with <i class="fa-solid fa-heart"></i> by Boimah G
+          Konah
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyAKdmAcqc61z99nus9OTd26f4J6lNLfywG9_uFsJq33yuguv2aWubaWYFBQeHupObCxQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+      var topNav = document.getElementById("topNav"),
+        stop = topNav.offsetTop,
+        docBody =
+          document.documentElement || document.body.parentNode || document.body,
+        hasOffset = window.pageYOffset !== undefined,
+        scrollTop;
+
+      window.onscroll = function (e) {
+        scrollTop = hasOffset ? window.pageYOffset : docBody.scrollTop;
+        if (scrollTop >= stop) {
+          topNav.className = "sticky";
+        } else {
+          topNav.className = "";
+        }
+      };
+    </script>
+  </body>
+</html>
