@@ -47,9 +47,15 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              I am a full stack developer and software engineer with great
-              knowledge in HTML, CSS, and JavaScript. In addition to my
-              technical knowledge, I have experience as a student leader,
+              I'm a full-stack developer who enjoys building and maintaining
+              websites and web apps. I've worked on both the front-end and
+              back-end of a website, utilizing a variety of technologies and
+              languages. I can use HTML, CSS, and JavaScript to design and
+              create a website's user interface and user experience. I can also
+              use PHP, Node.js, Python, Ruby, or Java to create and maintain the
+              logic and operation of a website. I am well acquainted with
+              several databases, such as MySQL, MongoDB, and others. In addition
+              to my technical knowledge, I have experience as a student leader,
               organizing and supervising programs for students from my home
               country at my university. As a department assistant at my
               university, I have added to the body of knowledge in the field of
@@ -129,17 +135,17 @@
             <i class="fa-solid fa-code"></i>
             <h2>Web Development</h2>
             <p>
-              I can offer you a web development service that will create a
-              website or web application for your needs. I have experience in
-              using various technologies and languages for web development, such
-              as HTML, CSS, JavaScript, PHP, SQL, Python, Ruby, and Java. I can
-              handle both front-end development (user interface and user
-              experience) and back-end development (logic and functionality) of
-              your website or web application. I can also ensure that your
-              website or web application is interactive, responsive, and
-              user-friendly. Whether you need a simple landing page, a blog, an
-              e-commerce site, a social network, or any other type of website or
-              web application, I can help you achieve your goals.
+              I offer a web development service that will create a website or
+              web application for your needs. I have experience in using various
+              technologies and languages for web development, such as HTML, CSS,
+              JavaScript, PHP, SQL, and Python. I can handle both front-end
+              development (user interface and user experience) and back-end
+              development (logic and functionality) of your website or web
+              application. I can also ensure that your website or web
+              application is interactive, responsive, and user-friendly. Whether
+              you need a simple landing page, a blog, an e-commerce site, a
+              social network, or any other type of website or web application, I
+              can help you achieve your goals.
             </p>
             <a href="#">learn more</a>
           </div>
@@ -148,22 +154,34 @@
             <i class="fa-solid fa-crop-simple"></i>
             <h2>UI/UX Design</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              explicabo dicta dolorum modi obcaecati. Sit beatae totam nam
-              reprehenderit? Esse cumque ullam numquam modi consectetur, totam
-              consequuntur delectus corporis dolorem.
+              I can offer you a UI/UX design service that will create and
+              improve the interface and experience of your digital product, such
+              as a website, app, or device. I have experience in using various
+              technologies and methods for researching, designing, testing, and
+              iterating on the visual and interactive aspects of your product. I
+              can ensure that your product design is user-friendly, attractive,
+              and meaningful. Whether you need a simple or complex product
+              design, I can help you achieve your goals..
             </p>
             <a href="#">learn more</a>
           </div>
 
           <div>
             <i class="fa-brands fa-app-store"></i>
-            <h2>App Design</h2>
+            <h2>App Development</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              explicabo dicta dolorum modi obcaecati. Sit beatae totam nam
-              reprehenderit? Esse cumque ullam numquam modi consectetur, totam
-              consequuntur delectus corporis dolorem.
+              I offer an app development service that will create an application
+              for your needs. I have experience in using various technologies
+              and languages for app development, such as HTML, CSS, JavaScript,
+              PHP, SQL, Python, Ruby, and Java. I can develop applications for
+              different platforms, such as web, Windows, MacOS, iOS, and
+              Android. I can also use cross-platform technologies, such as React
+              Native, to create applications that can run on multiple devices. I
+              can handle all the aspects of app development, such as planning,
+              designing, creating, testing, and deploying your application. I
+              can also ensure that your application is fast, secure, and
+              user-friendly. Whether you need a simple or complex application, I
+              can help you achieve your goals..
             </p>
             <a href="#">learn more</a>
           </div>
@@ -241,7 +259,11 @@
               <a href=""><i class="fa-brands fa-facebook"></i></a>
               <a href=""><i class="fa-brands fa-twitter-square"></i></a>
               <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a
+                href="https://www.linkedin.com/in/boimah-g-konah-b9956b200/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BNxiWFr6%2BRaOMjbraX5nGBw%3D%3D"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
             <a href="img/Boimah CV.pdf" download class="btn btn2"
               >Download CV</a
@@ -274,64 +296,6 @@
         </p>
       </div>
     </div>
-
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyAKdmAcqc61z99nus9OTd26f4J6lNLfywG9_uFsJq33yuguv2aWubaWYFBQeHupObCxQ/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-
-      var topNav = document.getElementById("topNav"),
-        stop = topNav.offsetTop,
-        docBody =
-          document.documentElement || document.body.parentNode || document.body,
-        hasOffset = window.pageYOffset !== undefined,
-        scrollTop;
-
-      window.onscroll = function (e) {
-        scrollTop = hasOffset ? window.pageYOffset : docBody.scrollTop;
-        if (scrollTop >= stop) {
-          topNav.className = "sticky";
-        } else {
-          topNav.className = "";
-        }
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
